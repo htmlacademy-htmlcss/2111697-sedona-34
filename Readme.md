@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Артур Лимайко](https://up.htmlacademy.ru/htmlcss/34/user/2111697).
-* Наставник: `Неизвестно`.
+* Наставник:[Сергей Зубов](https://htmlacademy.ru/profile/serj)
 
 ---
 
