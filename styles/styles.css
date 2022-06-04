@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: bold;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  background: #F2F2F2;
+  color: #000000;
+  width: 1280px;
+  height: 3315px;
+}
+
+.page-header {
+  text-align: left;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+  background: #FFFFFF;
+}
+
+.navigation-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.button {
+  width: 140px;
+  height: 37px;
+  padding: 8px 15px 9px;
+  background: #756157;
+  color:#FFFFFF;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages{
+  text-align: center;
+}
+.advantages-main-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-number{
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-main-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantages-item-highlight {
+  background: #82B3D3;
+  color:#FFFFFF;
+}
+
+.advantages-item-road {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-blue {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-main-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.search-hotel{
+  background:#FFFFFF;
+  text-align: center;
+}
+.search-hotel-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search-hotel-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.search-hotel-button {
+  padding: 12px 15px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  width: 544px;
+  height: 36px;
+}
+
+.subscribe {
+  text-align: center;
+  color: #FFFFFF;
+  width: 1200px;
+  height: 411px;
+  margin: 120px 40px;
+  background:url(/images/background-subscribe.jpg);
+}
+
+.subscribe-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscribe-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+
+/*  Это должно быть поле ввода но я вообще не понимаю как его сделать(((
+.subscribe-field {
+  width: 600px;
+  height: 60px;
+  border-radius: 0px 10px 10px 0px;
+*/
+
+.button-blue {
+  width: 200px;
+  height: 60px;
+  padding: 12px 15px;
+  background-color: #82B3D3;
+  border-radius: 0px 10px 10px 0px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.subscribe-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.footer {
+  text-align: left;
+}
+
+.footer-phone a {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.inner-header {
+  color:#FFFFFF;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  line-height: 100%;
+}
+
+a.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+}
+.hotel-sedona {
+  font-family: "PT Sans" , sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  width: 1200px;
+  height: 403px;
+  background:url(/images/catalog-background.jpg);
+}
+.filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.filter-apply-button {
+  width: 160px;
+  height: 48px;
+  padding: 14px 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius:4px;
+}
+
+.catalog-hotel section {
+  color:#000000;
+  text-decoration: none;
+
+}
+
+.hotels-found {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.select-control {
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  width: 290px;
+  height: 49px;
+  padding: 14px 20px;
+  gap: 94px;
+}
+
+.hotel-list {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+a.hotel-card-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color:#000000;
+  text-decoration: none;
+}
+
+.button.hotel-card-more {
+  width: 140px;
+  height: 37px;
+  padding: 8px 15px 9px;
+  font-weight: 700;
+}
+
+.hotel-button-favorites {
+  border-radius: 4px;
+  padding: 8px 15px 9px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.pagination-item {
+  width: 12px;
+  height: 36px;
+  padding: 12px 24px;
+  border: 1px solid #82B3D3;
+  border-radius: 4px;
+  background:#82B3D3;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.holels-per-page-label{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
