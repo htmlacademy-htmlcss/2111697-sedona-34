@@ -21,7 +21,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  width: 1280px;
+  margin:0;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -84,7 +84,13 @@ body {
 
 .welcome-image {
   display: block;
-  margin: 51px 371px 82px;
+  margin:0 auto;
+}
+
+.welcome {
+  padding-top: 51px ;
+  padding-bottom: 82px;
+  background-image: url(../images/sedona-background.jpg);
 }
 
 .title-sedona {
@@ -98,27 +104,31 @@ body {
   text-align: center;
 }
 
-.advantages-sublist-flex {
+.advantages-list {
   display: flex;
-  width:1200px;
-  list-style: none;
-  padding: 0;
+  flex-wrap: wrap;
 }
 
 .advantages-item {
-  width: 400px;
-  height: 385px;
-}
-
-.advantages-list {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 1200px;
-  margin:0 auto;
 }
 
-.advantages-main-title {
+.advantages-list-order {
+  display: flex;
+}
+
+.advantages-sublist {
+  display: flex;
+  width:1200px;
+  padding: 0;
+}
+
+.advantages-list-container {
+  padding:81px;
+  width: 230px;
+}
+
+.advantages-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -286,6 +296,7 @@ body {
 
 
 .main-inner-container {
+  display: flex;
   color: #FFFFFF;
   background: url("../images/catalog-background.jpg") no-repeat;
 
@@ -320,9 +331,18 @@ body {
 }
 
 .hotel-list {
+  display: flex;
+  padding-right:73px;
+  padding-left:0;
   font-size: 18px;
   line-height: 21px;
 }
+
+.hotel-card {
+  width:340px;
+
+}
+
 
 .hotel-card-link {
   font-weight: 700;
