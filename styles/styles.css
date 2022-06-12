@@ -122,12 +122,18 @@ body {
 .advantages-sublist {
   display: flex;
   width:1200px;
+  padding:0;
 }
 
 .advantages-list-container {
-  padding: 81px 85px;
+  width:400px;
+  padding-top:80px;
+  padding-bottom:80px;
 }
 
+.advantages-image {
+  display: block;
+}
 .advantages-title {
   font-weight: 700;
   font-size: 24px;
@@ -296,10 +302,16 @@ body {
 
 
 .main-inner-container {
-  display: flex;
   color: #FFFFFF;
   background: url("../images/catalog-background.jpg") no-repeat;
 
+}
+
+.hotel-sedona-filter {
+display: flex;
+justify-content: flex-start;
+padding-left: 70px;
+padding-bottom: 70px;
 }
 
 .filter-title {
@@ -309,11 +321,30 @@ body {
   line-height: 26px;
 }
 
+/* кнопки не трогал,пока что */
 
 .filter-apply-button {
   padding: 14px 15px;
   font-size: 16px;
   line-height: 20px;
+}
+
+.hotels-sorting {
+  display: flex;
+  justify-content: space-between;
+  margin-left:72px;
+}
+
+.select-control {
+  width: 290px;
+  padding: 14px 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+display: none;
 }
 
 .catalog-hotel {
@@ -325,22 +356,20 @@ body {
   line-height: 36px;
 }
 
-.select-control {
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
-}
-
-.hotel-list {
-  display: flex;
-  padding-right:73px;
-  padding-left:0;
+.hotel-list-container {
+  width: 965px;
+  margin-left:113px;
+  padding: 0;
   font-size: 18px;
   line-height: 21px;
 }
 
+.hotel-list {
+  padding: 0;
+}
+
 .hotel-card {
   width:340px;
-
 }
 
 
