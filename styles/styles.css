@@ -107,11 +107,13 @@ body {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .advantages-item {
   display: flex;
 }
+
 
 .advantages-list-order {
   display: flex;
@@ -120,12 +122,10 @@ body {
 .advantages-sublist {
   display: flex;
   width:1200px;
-  padding: 0;
 }
 
 .advantages-list-container {
-  padding:81px;
-  width: 230px;
+  padding: 81px 85px;
 }
 
 .advantages-title {
