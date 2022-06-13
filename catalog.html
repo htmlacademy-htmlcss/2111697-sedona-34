@@ -56,6 +56,7 @@
             </ul>
           </header>
           <section class="hotel-sedona">
+            <!-- добавить заголовок скрытый -->
             <form class="hotel-sedona-filter">
               <fieldset class="filter">
                 <legend class="filter-title">Инфраструктура</legend>
@@ -174,39 +175,41 @@
               </li>
             </ul>
           </div>
-          <ul class="pagination-list">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-          </ul>
-          <div class="holels-per-page">
-            <label class="holels-per-page-label">
-              <span>Гостиниц на странице:</span>
-              <select class="select-control">
-                <option value="select-1" selected >4</option>
-                <option value="select-2">16</option>
-                <option value="select-all">Все</option>
-              </select>
-            </label>
+          <div class="pagination">
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-next" href="#">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+            </ul>
+            <div class="holels-per-page">
+              <label class="holels-per-page-label">
+                <span>Гостиниц на странице:</span>
+                <select class="select-control">
+                  <option value="select-1" selected >4</option>
+                  <option value="select-2">16</option>
+                  <option value="select-all">Все</option>
+                </select>
+              </label>
+            </div>
           </div>
         </section>
       </main>
-      <section class="subscribe">
+      <article class="subscribe-no-background">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -216,7 +219,7 @@
           </label>
           <button class="button button-blue subscribe-button" type="submit">Подписаться</button>
         </form>
-      </section>
+      </article>
       <footer class="footer">
         <div class="footer-container">
           <ul class="footer-social-list">
