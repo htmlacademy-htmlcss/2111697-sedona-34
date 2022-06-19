@@ -508,8 +508,6 @@ body {
 }
 
 .hotel-card-link {
-  padding-top: 20px;
-  padding-left: 20px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -530,13 +528,15 @@ body {
 .pagination {
   width: 1060px;
   padding: 0 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .pagination-list {
   display: flex;
   list-style-type: none;
-  padding-top: 96px;
-  margin: 0;
 }
 
 .pagination-item:not(:last-child) {
