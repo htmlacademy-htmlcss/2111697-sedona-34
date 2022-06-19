@@ -29,35 +29,48 @@ body {
   background-color:#F2F2F2;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
   }
 
+  /* Блок навигация */
+
 .navigation {
   display:flex;
-  margin: 0;
-  padding: 0;
+  height: 65px;
 }
 
 .navigation-logo {
-  display: block;
+  display: flex;
   margin-left:70px;
 }
 
 .navigation-list {
   display: flex;
-  width:390px;
-  margin-left: 30px;
-  list-style: none;
+  flex-wrap: wrap;
+  min-width: 390px;
+  margin: 0 auto;
+  list-style-type: none;
 }
 
 .navigation-user {
-  display: block;
-  width: 264px;
-  margin: 0 auto;
-  list-style: none;
-  padding: 0;
+  display: flex;
+  min-width: 264px;
+  flex-wrap: wrap;
+  margin:0 auto;
+  list-style-type: none;
 }
 
 .navigation-link {
@@ -67,6 +80,12 @@ body {
   font-size: 20px;
   color: #000000;
   text-decoration: none;
+}
+
+.navigation-user-item {
+  min-width: 16px;
+  min-height: 22px;
+  padding:14px;
 }
 
 .button {
@@ -83,9 +102,13 @@ body {
   text-align: center;
 }
 
+/* Блок Добро пожаловать */
+
 .welcome-image {
   display: block;
   margin:0 auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .welcome {
@@ -98,16 +121,26 @@ body {
   display:block;
   flex-wrap: wrap;
   margin: 0 auto;
+  min-height:282px;
   padding-right: 70px;
   padding-left: 70px;
 }
+
+/* Преимущества */
 
 .advantages {
   text-align: center;
 }
 
+.advantages-main-title {
+  padding-bottom:31px;
+  padding-top: 63px;
+
+}
+
 .advantages-main-description {
   margin: 0 auto;
+  padding-bottom: 90px;
 }
 
 .advantages-list {
@@ -139,10 +172,29 @@ body {
   padding-right: 70px;
 }
 
+.advantages-title-sublist {
+  padding-top: 31px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-description-sublist {
+  padding-bottom: 81px;
+  padding-top: 30px;
+  margin:0 auto;
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .advantages-image {
   display: block;
 }
 .advantages-title {
+  padding-top: 88px;
+  padding-bottom: 30px;
   margin: 0 auto;
   font-weight: 700;
   font-size: 24px;
@@ -185,6 +237,8 @@ body {
 }
 
 .advantages-description {
+  padding-bottom: 88px;
+  padding-top: 30px;
   margin:0 auto;
   font-size: 18px;
   line-height: 21px;
@@ -193,6 +247,7 @@ body {
 .search-hotel {
   display: block;
   width: 1060px;
+  padding-bottom: 93px;
   padding-left: 70px;
   padding-right: 70px;
   background: #FFFFFF;
@@ -200,6 +255,8 @@ body {
 }
 
 .search-hotel-title {
+  padding-top: 91px;
+  padding-bottom: 30px;
   margin: 0 auto;
   font-weight: 700;
   font-size: 30px;
@@ -208,6 +265,7 @@ body {
 }
 
 .search-hotel-description {
+  padding-bottom: 68px;
   margin: 0 auto;
   width: 592px;
   font-size: 22px;
@@ -224,10 +282,11 @@ body {
 }
 
 
-/* в этом блоке не знаю надо было ли все исправлять?так же паддинги добавил и убрать ширину 1200px, и высоту 411px */
+
 .subscribe {
   display: block;
   width: 1060px;
+  padding-bottom: 94px;
   padding-left: 70px;
   padding-right: 70px;
   text-align: center;
@@ -242,9 +301,12 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  padding-top: 94px;
+  padding-bottom: 30px;
 }
 
 .subscribe-description {
+  padding-bottom: 46px;
   margin: 0 auto;
   width: 475px;
   font-weight: 400;
@@ -282,6 +344,12 @@ body {
   padding-right: 70px;
 }
 
+.footer-social-list{
+  list-style-type: none;
+  min-width:24px;
+  min-height: 14px;
+}
+
 .footer-phone a {
   font-size: 40px;
   line-height: 40px;
@@ -290,8 +358,15 @@ body {
 }
 
 .footer-phone {
+  padding-top: 30px;
   margin: 0 auto;
   width:331px;
+}
+
+.logo-html-academy {
+  min-width: 115px;
+  min-height: 33px;
+
 }
 
 .inner-header {
@@ -300,18 +375,23 @@ body {
 }
 
 .inner-header-title {
+  padding-top: 35px;
+  padding-bottom: 10px;
   width:494px;
-  padding: 0;
   font-size: 60px;
   line-height: 78px;
   margin: 0;
 }
 
 .breadcrumbs{
+  display:flex;
+  padding: 0;
   margin: 0;
+  list-style-type: none;
 
 }
 .breadcrumbs-link {
+  margin-right:24px;
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
@@ -337,8 +417,6 @@ body {
   line-height: 26px;
 }
 
-/* кнопки не трогал,пока что */
-
 .filter-apply-button {
   padding: 14px 15px;
   font-size: 16px;
@@ -347,17 +425,31 @@ body {
 
 .hotels-sorting {
   display: flex;
-  justify-content: space-between;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding:60px 70px;
 }
 
 .select-control {
   width: 290px;
+  height:48px;
   padding: 14px 20px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin: 0 auto;
+}
+
+.button-card {
+  width:48px;
+  height:48px;
+}
+
+.button-slideshow {
+  width:48px;
+  height:48px;
+}
+
+.button-list {
+  width:48px;
+  height:48px;
 }
 
 .visually-hidden {
@@ -369,25 +461,40 @@ body {
 }
 
 .hotels-found {
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
 }
 
 .hotel-list-container {
-  width: 965px;
-  margin-left: 113px;
+  width: 1060px;
+  margin-left: 93px;
   padding: 0;
   font-size: 18px;
   line-height: 21px;
 }
 
 .hotel-list {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
+  list-style-type: none;
 }
 
 .hotel-card {
   width: 340px;
+  height: 438px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* хотел задать паддинги только 1 и 2 карточке в итоге последняя тоже с отступом */
+
+.hotel-card:not(:nth-child(3n)) {
+  padding-right: 10px;
 }
 
 .subscribe-no-background {
@@ -401,6 +508,8 @@ body {
 }
 
 .hotel-card-link {
+  padding-top: 20px;
+  padding-left: 20px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -419,14 +528,38 @@ body {
 }
 
 .pagination {
-  width: 1056px;
+  width: 1060px;
   padding: 0 70px;
 }
 
 .pagination-list {
-  padding: 0;
+  display: flex;
+  list-style-type: none;
+  padding-top: 96px;
   margin: 0;
+}
 
+.pagination-item:not(:last-child) {
+ padding-right:8px;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 19px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color:#82B3D3;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.pagination-current {
+  background-color:#F2F2F2;
+  color:#000000
 }
 
 .holels-per-page {
