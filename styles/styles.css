@@ -49,7 +49,7 @@ body {
 
 .navigation {
   display:flex;
-  height: 65px;
+  min-height: 65px;
 }
 
 .navigation-logo {
@@ -107,46 +107,44 @@ body {
 .welcome-image {
   display: block;
   margin:0 auto;
-  padding-top: 51px;
-  padding-bottom: 82px;
 }
 
 .welcome {
+  min-height:428px;
+  padding-top: 51px;
+  padding-bottom: 82px;
   padding-left: 70px;
   padding-right: 70px;
   background-image: url(../images/sedona-background.jpg);
+  background-color:#82B3D3;
+  background-repeat: no-repeat;
+  color:#F2F2F2;
+  background-size: cover;
 }
 
 .title-sedona {
   display:block;
   flex-wrap: wrap;
   margin: 0 auto;
-  min-height:282px;
-  padding-right: 70px;
-  padding-left: 70px;
+  min-height:132px;
+  padding: 60px 70px 90px;
 }
 
-/* Преимущества */
+/* Преимущества Заголовок 1*/
 
 .advantages {
   text-align: center;
 }
 
 .advantages-main-title {
-  padding-bottom:31px;
-  padding-top: 63px;
-
+  padding-bottom: 31px;
 }
 
 .advantages-main-description {
   margin: 0 auto;
-  padding-bottom: 90px;
 }
 
-.advantages-list {
-  display:flex;
-  flex-wrap:wrap;
-}
+/* Список преимуществ */
 
 .advantages-item {
   display: flex;
@@ -166,15 +164,15 @@ body {
   padding: 0;
 }
 
-.advantages-list-container {
-  width: 260px;
-  padding-left: 70px;
-  padding-right: 70px;
+.advantages-sublist-container {
+  min-width: 260px;
+  padding: 80px 70px;
 }
 
+
 .advantages-title-sublist {
-  padding-top: 31px;
   margin: 0 auto;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -182,8 +180,6 @@ body {
 }
 
 .advantages-description-sublist {
-  padding-bottom: 81px;
-  padding-top: 30px;
   margin:0 auto;
   font-size: 18px;
   line-height: 21px;
@@ -192,9 +188,8 @@ body {
 .advantages-image {
   display: block;
 }
+
 .advantages-title {
-  padding-top: 88px;
-  padding-bottom: 30px;
   margin: 0 auto;
   font-weight: 700;
   font-size: 24px;
@@ -203,6 +198,8 @@ body {
 }
 
 .advantages-number {
+  display:block;
+  margin-top:30px;
   font-size: 18px;
   line-height: 21px;
 }
@@ -213,11 +210,11 @@ body {
 }
 
 .advantages-item-highlight {
-  width: 260px;
+  min-width: 260px;
   background-color: #82B3D3;
   color: #FFFFFF;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 88px 70px;
+  min-height: 200px;
 }
 
 .advantages-item-road {
@@ -237,27 +234,24 @@ body {
 }
 
 .advantages-description {
-  padding-bottom: 88px;
-  padding-top: 30px;
-  margin:0 auto;
+  margin: 0 auto;
+  margin-top:30px;
   font-size: 18px;
   line-height: 21px;
 }
 
 .search-hotel {
   display: block;
-  width: 1060px;
-  padding-bottom: 93px;
-  padding-left: 70px;
-  padding-right: 70px;
+  min-width: 1060px;
+  min-height:234px;
+  padding: 90px 70px 93px;
   background: #FFFFFF;
   text-align: center;
 }
 
 .search-hotel-title {
-  padding-top: 91px;
-  padding-bottom: 30px;
   margin: 0 auto;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -265,9 +259,8 @@ body {
 }
 
 .search-hotel-description {
-  padding-bottom: 68px;
   margin: 0 auto;
-  width: 592px;
+  margin-bottom: 30px;
   font-size: 22px;
   line-height: 26px;
 }
@@ -281,34 +274,31 @@ body {
   line-height: 36px;
 }
 
-
-
 .subscribe {
   display: block;
-  width: 1060px;
-  padding-bottom: 94px;
-  padding-left: 70px;
-  padding-right: 70px;
+  min-width: 1060px;
+  min-height: 223px;
+  padding:94px 70px;
   text-align: center;
   color: #FFFFFF;
   background: url("../images/background-subscribe.jpg");
+  background-color: #82B3D3;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .subscribe-title {
-  width: 404px;
   margin: 0 auto;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  padding-top: 94px;
-  padding-bottom: 30px;
 }
 
 .subscribe-description {
-  padding-bottom: 46px;
   margin: 0 auto;
-  width: 475px;
+  margin-bottom: 46px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
