@@ -403,19 +403,13 @@ body {
 
 .hotel-sedona-filter {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .filter {
   padding: 0;
   margin: 0;
-  border: transparent;
-}
-
-.filter-list {
-  list-style-type: none;
-  padding:0;
+  margin-right: 35px;
 }
 
 .filter-title {
@@ -426,14 +420,9 @@ body {
 }
 
 .filter-apply-button {
-  height: 48px;
-  width: 148px;
+  padding: 14px 15px;
   font-size: 16px;
   line-height: 20px;
-}
-
-.filter-reset-button {
-
 }
 
 .hotels-sorting {
