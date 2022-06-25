@@ -318,10 +318,14 @@ body {
 
 .button-green {
   background-color: #7DB54F;
+  font-family: 'PT Sans';
+  font-style: normal;
 }
 
 .button-blue {
   background-color: #82B3D3;
+  font-family: 'PT Sans';
+  font-style: normal;
 }
 
 .subscribe-button {
@@ -537,10 +541,15 @@ body {
   align-self: end;
 }
 
-.hotel-button-favorites {
-  padding: 8px 15px 9px;
+.rating-button {
+  background:#d3cccc;
+  grid-column: 2 / 2;
+  color:#333333;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 20px
 }
 
 .pagination {
