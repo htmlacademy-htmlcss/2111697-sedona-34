@@ -541,15 +541,13 @@ body {
   align-self: end;
 }
 
-.rating-button {
-  background:#d3cccc;
-  grid-column: 2 / 2;
-  color:#333333;
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
+.rating-hotel {
+  background:#dddddd;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 10px 22px;
   font-size: 16px;
-  line-height: 20px
+  line-height: 20px;
 }
 
 .pagination {
