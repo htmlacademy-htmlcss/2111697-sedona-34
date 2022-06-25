@@ -432,10 +432,6 @@ body {
   line-height: 20px;
 }
 
-.filter-reset-button {
-
-}
-
 .hotels-sorting {
   display: flex;
   padding-top:60px;
@@ -483,35 +479,48 @@ body {
 }
 
 .hotel-list-container {
-  width: 1060px;
+  width: 1056px;
   padding: 0;
   font-size: 18px;
   line-height: 21px;
 }
 
 .hotel-list {
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
   padding-bottom: 66px;
+  display: grid;
+  width: 1056px;
+  grid-template-columns: 340px 340px 340px;
+  gap: 18px;
   margin: 0;
   list-style-type: none;
 }
 
 .hotel-card {
-  width: 340px;
-  height: 438px;
-  padding-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
+  padding: 20px;
 }
 
-.hotel-card:not(:nth-child(3n)) {
-  padding-right: 10px;
+.hotel-card-image {
+  margin-bottom:16px;
 }
+
+.hotel-card-title {
+  margin:0;
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+}
+
+/* .hotel-card:not(:nth-child(3n)) {
+  padding-right: 10px;
+} */
 
 .hotel-card-link {
+  grid-column: 1 / -1;
+  margin:0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -521,6 +530,11 @@ body {
 
 .hotel-card-more {
   padding: 8px 15px 9px;
+  width: 110px;
+  height: 20px;
+}
+.button.hotel-card-more {
+  align-self: end;
 }
 
 .hotel-button-favorites {
