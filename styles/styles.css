@@ -68,9 +68,21 @@ body {
 .navigation-user {
   display: flex;
   min-width: 264px;
+  align-items: center;
   flex-wrap: wrap;
   margin:0 auto;
   list-style-type: none;
+}
+.navigation-user-item-search{
+  background-image:url("/images/icon/search.svg");
+  background-repeat:no-repeat;
+  background-position:18px 18px;
+}
+
+.navigation-user-item-favorite{
+  background-image:url("/images/icon/favorite.svg");
+  background-repeat:no-repeat;
+  background-position:18px 18px;
 }
 
 .navigation-link {
