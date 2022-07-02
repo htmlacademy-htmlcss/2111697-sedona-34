@@ -180,6 +180,29 @@ body {
   min-width: 260px;
   padding: 80px 70px;
 }
+
+.advantages-sublist-container::before {
+  content: "";
+  display:block;
+  width: 75px;
+  height: 76px;
+  margin: 0 auto 28px;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+.advantages-sublist-container-home::before {
+  background-image:url("/images/icon/home.svg");
+}
+
+.advantages-sublist-container-food::before {
+background-image:url("/images/icon/food.svg");
+}
+
+.advantages-sublist-container-souvenir::before {
+  background-image:url("/images/icon/souvenir.svg");
+}
+
 .advantages-list-container {
   width: 230px;
   padding: 102px 84px;
@@ -340,6 +363,14 @@ body {
   font-style: normal;
 }
 
+.button-blue:hover{
+  background-color: #68A2CA;
+}
+
+.button-blue:disabled {
+  background-color: #E5E5E5;
+}
+
 .subscribe-button {
   font-size: 20px;
   line-height: 36px;
@@ -355,9 +386,32 @@ body {
 }
 
 .footer-social-list{
+  display: flex;
+  justify-content: space-around;
+  padding:0;
+  align-items:center;
   list-style-type: none;
-  min-width:24px;
-  min-height: 14px;
+  min-width:142px;
+  height: 40px;
+  fill:#83B3D3;
+}
+
+.footer-social-item {
+  display: inline-block;
+  width:48px;
+  height:40px;
+
+}
+.icon-vk:hover {
+  background-color: #68A2CA;
+}
+
+.icon-telegramm {
+
+}
+
+.icon-youtube {
+
 }
 
 .footer-phone a {
@@ -544,6 +598,12 @@ body {
   height: 20px;
 }
 
+.hotel-card-more:hover {
+  background-color: #615048;
+}
+.hotel-card-more:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
 .container-card-name {
   display: grid;
   grid-template-columns: 1fr 1fr;
