@@ -86,6 +86,7 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   padding:20px;
   font-weight: 700;
@@ -93,6 +94,18 @@ body {
   color: #000000;
   text-decoration: none;
 }
+
+
+/* не все понял с этой полоской */
+.navigation-link-current::before {
+  position: absolute;
+  bottom:0;
+  width:68px;
+  height: 2px;
+  background-color:#756257;
+  content: "";
+}
+
 
 .navigation-user-item {
   min-width: 16px;
@@ -355,20 +368,31 @@ background-image:url("/images/icon/food.svg");
   background-color: #7DB54F;
   font-family: 'PT Sans';
   font-style: normal;
+  cursor: pointer;
+}
+
+.button-green:hover{
+ background-color:#6C9E42;
+}
+
+.button-green:active {
+  background-color:#7DB54F;
+
 }
 
 .button-blue {
   background-color: #82B3D3;
   font-family: 'PT Sans';
   font-style: normal;
+  cursor: pointer;
 }
 
 .button-blue:hover{
   background-color: #68A2CA;
 }
 
-.button-blue:disabled {
-  background-color: #E5E5E5;
+.button-blue:active {
+  background-color: #82B3D3;
 }
 
 .subscribe-button {
@@ -393,25 +417,48 @@ background-image:url("/images/icon/food.svg");
   list-style-type: none;
   min-width:142px;
   height: 40px;
-  fill:#83B3D3;
 }
 
 .footer-social-item {
   display: inline-block;
   width:48px;
   height:40px;
-
 }
+
+.icon-vk {
+  fill:#83B3D3;
+}
+
 .icon-vk:hover {
-  background-color: #68A2CA;
+  fill:#68A2CA;
+}
+
+.icon-vk:active{
+  fill:rgba(104, 162, 202, 0.3);
 }
 
 .icon-telegramm {
+  fill:#83B3D3;
+}
 
+.icon-telegramm:hover {
+  fill:#68A2CA;
+}
+
+.icon-telegramm:active {
+  fill:rgba(104, 162, 202, 0.3);
 }
 
 .icon-youtube {
+  fill:#83B3D3;
+}
 
+.icon-youtube:hover {
+  fill:#68A2CA;
+}
+
+.icon-youtube:active {
+  fill:rgba(104, 162, 202, 0.3);
 }
 
 .footer-phone a {
@@ -427,10 +474,25 @@ background-image:url("/images/icon/food.svg");
   width:331px;
 }
 
+.footer-phone a:hover {
+  color: #756157;
+}
+
+.footer-phone a:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .logo-html-academy {
   min-width: 115px;
   min-height: 33px;
+}
 
+.logo-html-academy:hover {
+  fill: #756157;
+}
+
+.logo-html-academy:active {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .inner-header {
@@ -445,7 +507,7 @@ background-image:url("/images/icon/food.svg");
   margin: 0;
 }
 
-.breadcrumbs{
+.breadcrumbs {
   display:flex;
   padding: 0;
   margin: 0;
@@ -454,13 +516,13 @@ background-image:url("/images/icon/food.svg");
   list-style-type: none;
 
 }
+
 .breadcrumbs-link {
   margin-right:24px;
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
 }
-
 
 .main-inner-container {
   padding: 35px 70px 70px;
@@ -516,20 +578,41 @@ background-image:url("/images/icon/food.svg");
   border-radius: 4px;
   margin: 0 auto;
 }
+.select-control-arrow-right {
+  content:"";
+  background-image:url("../images/icon/arrow-right.svg");
+  background-repeat:no-repeat;
+  background-size: 12px 7px;
 
-.button-card {
+}
+
+.card-grid-toogle {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
   width:48px;
   height:48px;
 }
 
-.button-slideshow {
-  width:48px;
-  height:48px;
+.card-grid-toogle-current{
+  border: 2px solid #000000;
+  border-radius: 4px;
 }
 
-.button-list {
-  width:48px;
-  height:48px;
+.card-grid-toogle:hover {
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.card-grid-toogle:active {
+  border: 2px solid #68A2CA;
+  border-radius: 4px;
+}
+
+.card-grid-toogle:nth-child(1){
+  margin-left:8px;
 }
 
 .visually-hidden {
@@ -601,9 +684,11 @@ background-image:url("/images/icon/food.svg");
 .hotel-card-more:hover {
   background-color: #615048;
 }
-.hotel-card-more:focus {
-  color: rgba(255, 255, 255, 0.3);
+
+.hotel-card-more:active {
+  background-color: #756157;
 }
+
 .container-card-name {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -680,7 +765,6 @@ background-image:url("/images/icon/food.svg");
 }
 
 .holels-per-page-label {
-
   font-size: 18px;
   line-height: 21px;
 }
