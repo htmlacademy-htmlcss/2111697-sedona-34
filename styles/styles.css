@@ -95,8 +95,6 @@ body {
   text-decoration: none;
 }
 
-
-/* не все понял с этой полоской */
 .navigation-link-current::before {
   position: absolute;
   bottom:0;
@@ -385,6 +383,7 @@ body {
   font-family: 'PT Sans';
   font-style: normal;
   cursor: pointer;
+
 }
 
 .button-blue:hover{
@@ -421,10 +420,14 @@ body {
   margin-top:5px;
   margin-bottom:5px;
 }
-
+/*
 .footer-social-item {
-
-}
+  display: flex;
+  width: 25px;
+  height: 26px;
+  align-items: center;
+  padding: 13px 15px;
+  } */
 
 .footer-social-copyright {
   margin-top:5px;
@@ -780,6 +783,20 @@ a.breadcrumbs-link:active {
   grid-column: 1 / -1;
   gap: 16px 20px;
   align-self: end;
+}
+.rating-hotel-stars{
+  display: flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:6px;
+}
+
+.star {
+  background-image:url("../images/icon/stars.svg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  width:17px;
+  height: 18px;
 }
 
 .rating-hotel {
