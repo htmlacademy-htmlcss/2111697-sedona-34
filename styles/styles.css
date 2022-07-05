@@ -110,6 +110,7 @@ body {
 
 .navigation-button:active {
   color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
 }
 
 .navigation-user-item {
@@ -338,6 +339,7 @@ body {
 
 .search-hotel-button:active {
   color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
 }
 
 .subscribe {
@@ -391,6 +393,7 @@ body {
 
 .button-green:active {
   color: rgba(255, 255, 255, 0.3);
+  background-color:#7DB54F;
 }
 
 .button-blue {
@@ -407,6 +410,7 @@ body {
 
 .button-blue:active {
   color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
 }
 
 .subscribe-button {
@@ -643,6 +647,31 @@ a.breadcrumbs-link:active {
   line-height: 20px;
 }
 
+.button-reset {
+  border:none;
+  background-color:transparent;
+  padding:0;
+  margin: 0;
+  color:#FFFFFF;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-reset:active {
+border: 3px solid #83B3D3;
+border-radius: 4px;
+}
+
+.button-reset:hover {
+  color: #FFFFFF;
+  opacity: 0.6;
+  }
+
 .hotels-sorting {
   display: flex;
   padding-top:60px;
@@ -657,6 +686,14 @@ a.breadcrumbs-link:active {
   border-radius: 4px;
   margin: 0 auto;
   cursor:pointer;
+}
+
+.select-control:hover {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:active {
+  border: 2px solid #3F5E72;
 }
 
 .select-control-arrow-right {
@@ -770,6 +807,7 @@ a.breadcrumbs-link:active {
 
 .hotel-card-more:active {
   color: rgba(255, 255, 255, 0.3);
+  background-color:#756157;
 }
 
 .container-card-name {
