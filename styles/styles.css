@@ -104,6 +104,13 @@ body {
   content: "";
 }
 
+.navigation-button:hover {
+  background-color: #615048;
+}
+
+.navigation-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .navigation-user-item {
   min-width: 16px;
@@ -322,6 +329,15 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  cursor: pointer;
+}
+
+.search-hotel-button:hover {
+  background-color:#615048;
+}
+
+.search-hotel-button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .subscribe {
@@ -369,13 +385,12 @@ body {
   cursor: pointer;
 }
 
-.button-green:hover{
- background-color:#6C9E42;
+.button-green:hover {
+  background-color:#6C9E42;
 }
 
 .button-green:active {
-  background-color:#7DB54F;
-
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-blue {
@@ -386,12 +401,12 @@ body {
 
 }
 
-.button-blue:hover{
+.button-blue:hover {
   background-color: #68A2CA;
 }
 
 .button-blue:active {
-  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .subscribe-button {
@@ -420,14 +435,14 @@ body {
   margin-top:5px;
   margin-bottom:5px;
 }
-/*
+
 .footer-social-item {
   display: flex;
   width: 25px;
   height: 26px;
   align-items: center;
   padding: 13px 15px;
-  } */
+  }
 
 .footer-social-copyright {
   margin-top:5px;
@@ -442,7 +457,7 @@ body {
   fill:#68A2CA;
 }
 
-.icon-vk:active{
+.icon-vk:active {
   fill:rgba(104, 162, 202, 0.3);
 }
 
@@ -683,11 +698,6 @@ a.breadcrumbs-link:active {
   border-radius: 4px;
 }
 
-/*
-.card-grid-toogle:nth-child(1){
-  margin-left:8px;
-} */
-
 .visually-hidden {
   display: none;
 }
@@ -759,7 +769,7 @@ a.breadcrumbs-link:active {
 }
 
 .hotel-card-more:active {
-  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .container-card-name {
@@ -784,7 +794,8 @@ a.breadcrumbs-link:active {
   gap: 16px 20px;
   align-self: end;
 }
-.rating-hotel-stars{
+
+.rating-hotel-stars {
   display: flex;
   align-items:center;
   justify-content:flex-start;
@@ -795,8 +806,8 @@ a.breadcrumbs-link:active {
   background-image:url("../images/icon/stars.svg");
   background-repeat:no-repeat;
   background-size:cover;
-  width:17px;
-  height: 18px;
+  width:18px;
+  height: 17px;
 }
 
 .rating-hotel {
