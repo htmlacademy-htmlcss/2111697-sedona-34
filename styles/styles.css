@@ -43,6 +43,7 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #FFFFFF;
 }
 
   /* Блок навигация */
@@ -175,11 +176,12 @@ body {
   padding-bottom: 82px;
   padding-left: 70px;
   padding-right: 70px;
-  background-image: url(../images/sedona-background.jpg);
+  background-image:url(../images/background-sedona.svg),url(../images/sedona-background.jpg);
   background-color:#82B3D3;
   background-repeat: no-repeat;
   color:#F2F2F2;
-  background-size: cover;
+  background-size:100% auto,cover;
+  background-position:center bottom,center;
 }
 
 .title-sedona {
@@ -688,18 +690,18 @@ a.breadcrumbs-link:active {
   border-radius: 4px;
 }
 
-.reset-button:focus {
+.button-reset:focus {
   border-color:#83B3D3;
   outline: 0;
 }
 
 .button-reset:hover {
   opacity: 0.6;
-
 }
 
 .button-reset:active {
   opacity: 0.3;
+  border-color:transparent;
 }
 
 .hotels-sorting {
@@ -750,19 +752,20 @@ a.breadcrumbs-link:active {
 }
 
 
-.card-grid-toogle-current{
-  border: 2px solid #000000;
-  border-radius: 4px;
+.card-grid-toogle-current {
+  border-color: #000000;
 }
 
 .card-grid-toogle:hover {
-  border: 2px solid #000000;
-  border-radius: 4px;
+  border-color: #000000;
+}
+
+.card-grid-toogle:focus {
+  border-color: #68A2CA;
 }
 
 .card-grid-toogle:active {
-  border: 2px solid #68A2CA;
-  border-radius: 4px;
+  border-color:#000000;
 }
 
 .visually-hidden {
@@ -864,18 +867,29 @@ a.breadcrumbs-link:active {
 }
 
 .rating-hotel-stars {
+  align-items: center;
   display: flex;
-  align-items:center;
-  justify-content:flex-start;
-  gap:6px;
 }
 
-.star {
+.rating-hotel-stars::before {
+  content:"";
+  display: block;
+  height:18px;
   background-image:url("../images/icon/stars.svg");
-  background-repeat:no-repeat;
-  background-size:cover;
-  width:18px;
-  height: 17px;
+  background-repeat: repeat-x;
+  background-position: left center;
+}
+
+.rating-hotel-stars-4::before {
+  width: 90px;
+}
+
+.rating-hotel-stars-3::before {
+  width:66px;
+}
+
+.rating-hotel-stars-2::before {
+  width: 42px;
 }
 
 .rating-hotel {
@@ -895,6 +909,7 @@ a.breadcrumbs-link:active {
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
+  border-top: 1px solid #E6E6E6;
 }
 
 .pagination-list {
