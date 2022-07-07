@@ -78,7 +78,7 @@ body {
 .navigation-user-item-search {
   background-image:url("/images/icon/search.svg");
   background-repeat:no-repeat;
-  background-position:18px 18px;
+  background-position:center center;
   cursor: pointer;
 }
 
@@ -93,7 +93,7 @@ body {
 .navigation-user-item-favorite {
   background-image:url("/images/icon/favorite.svg");
   background-repeat:no-repeat;
-  background-position:18px 18px;
+  background-position:center center;
   cursor: pointer;
 }
 
@@ -144,8 +144,8 @@ body {
 }
 
 .navigation-user-item {
-  min-width: 16px;
-  min-height: 22px;
+  min-width: 18px;
+  min-height: 18px;
   padding:14px;
 }
 
@@ -172,10 +172,7 @@ body {
 
 .welcome {
   min-height:428px;
-  padding-top: 51px;
-  padding-bottom: 82px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding:51px 70px 82px;
   background-image:url(../images/background-sedona.svg),url(../images/sedona-background.jpg);
   background-color:#82B3D3;
   background-repeat: no-repeat;
@@ -427,12 +424,17 @@ body {
   background-color:#7DB54F;
 }
 
+.button-blue-apply {
+  min-width:160px;
+  min-height: 48px;
+  padding: 14px 15px;
+}
+
 .button-blue {
   background-color: #82B3D3;
   font-family: 'PT Sans';
   font-style: normal;
   cursor: pointer;
-
 }
 
 .button-blue:hover {
@@ -545,6 +547,8 @@ body {
 .logo-html-academy {
   min-width: 115px;
   min-height: 33px;
+  margin-top: 9px;
+  margin-bottom: 8px;
 }
 
 .logo-html-academy:hover {
@@ -711,8 +715,13 @@ a.breadcrumbs-link:active {
 }
 
 .select-control {
-  width: 290px;
-  height:50px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  min-width: 290px;
+  min-height:49px;
   padding: 14px 20px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
@@ -737,7 +746,7 @@ a.breadcrumbs-link:active {
 
 .card-container {
   display:flex;
-  align-items:flex-start;
+  align-items:center;
   gap:8px;
 }
 
@@ -747,8 +756,8 @@ a.breadcrumbs-link:active {
   align-items:center;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  width:46px;
-  height:46px;
+  width:48px;
+  height:48px;
 }
 
 
@@ -779,7 +788,7 @@ a.breadcrumbs-link:active {
 }
 
 .hotels-found {
-  margin: 0;
+  margin:8px 0 5px;
   font-size: 30px;
   line-height: 36px;
 }
