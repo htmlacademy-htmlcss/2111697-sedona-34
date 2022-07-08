@@ -252,7 +252,7 @@ body {
 
 .advantages-list-container {
   width: 230px;
-  padding: 102px 84px;
+  padding: 102px 85px;
   min-height: 180px;
 }
 
@@ -404,8 +404,28 @@ body {
   color: #000000;
   font-size: 18px;
   line-height: 21px;
-  background: #F2F2F2;
-  border-radius: 0 10px 10px 0;
+  border-radius:10px 0 0 10px;
+  background-color: #F2F2F2;
+  width: 600px;
+  border: transparent;
+  padding: 20px 22px;
+  outline: none;
+}
+
+.subscribe-field:hover,
+.subscribe-field:focus {
+  opacity: 0.8;
+}
+
+.subscribe-field:focus {
+  outline: 1px solid #F2F2F2;
+}
+
+.subscribe-field:disabled,
+.subscribe-field:disabled:hover {
+  color:#000000;
+  background-color:#F2F2F2;
+  border-color:transparent;
 }
 
 .button-green {
@@ -651,6 +671,60 @@ a.breadcrumbs-link:active {
   background-repeat: no-repeat;
 }
 
+  /* Фильтр Гостиниц */
+.control {
+  position: relative;
+  display: block;
+  padding-left:19px
+}
+
+.control-mark {
+  position:absolute;
+  left: -19px;
+  bottom: 3px;
+  width:20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control:hover .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.control:focus .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+  border: 3px solid #83B3D3;
+}
+
+.control:active .control-mark {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="checkbox"]+
+.control-mark::before {
+  position: absolute;
+  content:url("../images/icon/checkmark-filter.svg");
+  right: 3px;
+  top: -6px;
+}
+
+.control-input[type="radio"]+
+.control-mark::before {
+  position: absolute;
+  content:"";
+  border-radius:50%;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  top: 5px;
+  right: 5px;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
 .hotel-sedona-filter {
   display: flex;
   justify-content: space-between;
@@ -673,6 +747,133 @@ a.breadcrumbs-link:active {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+}
+
+.filter-wrapper-inputs {
+  position:relative;
+  display: flex;
+}
+
+.catalog-filter-label-text{
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin:0;
+  position:relative;
+}
+
+.price-input::-webkit-outer-spin-button,
+.price-input::-webkit-inner-spin-button {
+  margin: 0;
+  appearance: none;
+}
+
+.price-input:hover {
+  opacity: 0.6;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.price-input:focus {
+  box-shadow: 0 0 0 3px #81B3D2,
+    inset 0 0 0 3px #81B3D2;
+  outline: none;
+  z-index: 1;
+}
+
+.price-input:active {
+  background: #756257;
+  box-shadow: none;
+}
+
+.price-input::placeholder {
+  color: #FFFFFF;
+}
+
+.price-input {
+  width:144px;
+  height:48px;
+  padding: 14px 35px 13px 19px;
+  appearance:textfield;
+  box-sizing: border-box;
+  /* font: inherit; */
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.range {
+  position: relative;
+}
+
+.range-scale {
+  position: absolute;
+  width: 288px;
+  height: 4px;
+  top: 75px;
+  background-color: rgba(255, 255, 255, 0.3);
+  left: 0;
+}
+
+.range-bar-opacity {
+  position: absolute;
+  height: 4px ;
+  background: #000000;
+}
+
+.range-bar {
+  position: absolute;
+  /* width: 228px; */
+  height: 4px;
+  background: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width:20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #E5E5E5;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.range-toggle:focus {
+  border: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.range-toggle:active {
+  border: 2px solid #83B3D3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.toggle-min {
+  top: -8px;
+  left:0;
+}
+
+.toggle-max {
+  top: -8px;
+  left: 216px;
 }
 
 .filter-apply-button {
@@ -1022,5 +1223,6 @@ a.pagination-link:active {
 }
 
 .subscribe-form {
-  margin-bottom: 94px;
+  display: flex;
+  justify-content: center;
 }
