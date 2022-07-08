@@ -701,16 +701,18 @@ a.breadcrumbs-link:active {
   background: rgba(255, 255, 255, 0.3);
 }
 
-.control-input[type="checkbox"]+
-.control-mark::before {
+.control-input[type="checkbox"] + .control-mark::before {
   position: absolute;
-  content:url("../images/icon/checkmark-filter.svg");
+  /* content:url("../images/icon/checkmark-filter.svg"); */
   right: 3px;
   top: -6px;
 }
 
-.control-input[type="radio"]+
-.control-mark::before {
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  content:url("../images/icon/checkmark-filter.svg");
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
   content:"";
   border-radius:50%;
@@ -768,6 +770,10 @@ a.breadcrumbs-link:active {
   position:relative;
 }
 
+.catalog-filter-label:hover{
+  z-index: 1;
+}
+
 .price-input::-webkit-outer-spin-button,
 .price-input::-webkit-inner-spin-button {
   margin: 0;
@@ -775,16 +781,15 @@ a.breadcrumbs-link:active {
 }
 
 .price-input:hover {
-  opacity: 0.6;
-  border: 2px solid #FFFFFF;
-  border-radius: 4px 0px 0px 4px;
+  border-color:#abb0b3;
 }
 
 .price-input:focus {
   box-shadow: 0 0 0 3px #81B3D2,
     inset 0 0 0 3px #81B3D2;
   outline: none;
-  z-index: 1;
+  z-index: 2;
+  border-color:#FFFFFF;
 }
 
 .price-input:active {
@@ -810,6 +815,15 @@ a.breadcrumbs-link:active {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+}
+
+.price-input-before {
+  border-radius: 4px 0 0 4px;
+}
+
+.price-input-after{
+  border-radius: 0 4px 4px 0;
+  margin-left: -2px;
 }
 
 .range {
