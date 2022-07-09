@@ -833,7 +833,6 @@ a.breadcrumbs-link:active {
   padding: 14px 35px 13px 19px;
   appearance:textfield;
   box-sizing: border-box;
-  /* font: inherit; */
   border: 2px solid #FFFFFF;
   border-radius: 4px;
   background-color: transparent;
@@ -873,7 +872,6 @@ a.breadcrumbs-link:active {
 
 .range-bar {
   position: absolute;
-  /* width: 228px; */
   height: 4px;
   background: #FFFFFF;
 }
@@ -1317,6 +1315,23 @@ a.pagination-link:active {
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+  outline:none;
+}
+
+.modal-close-button:active {
+  background-color:#E6E6E6;
+  color:#000000;
+  opacity:0.6;
+  border:none;
+}
+
 .modal-title {
   font-family: 'PT Sans';
   font-style: normal;
@@ -1337,25 +1352,70 @@ a.pagination-link:active {
   text-transform: capitalize;
   margin: 0;
   margin-bottom: 40px;
+  width:100%;
+}
+
+.field-group:nth-child(n+3) {
+  width:50%;
 }
 
 .field-group-description {
   display: block;
   width: 145px;
   margin-right:auto;
+  margin-top: 8px;
 }
 
 .field-group-description-last {
+  position: relative;
   margin-left: 56px;
   width:91px;
+}
+
+.field-group-description-last::before {
+  position: absolute;
+  content:"";
+  width: 25px;
+  height: 25px;
+  background-color: #83B3D3;
+  border-radius:50%;
+  top: 2px;
+  right: 14px;
+}
+
+.field-group-description-last::after {
+  position: absolute;
+  content:url("../images/icon/sign-modal.svg");
+  top: -1px;
+  right: 26px;
 }
 
 .input-form-field {
   background: #F2F2F2;
   border-radius: 4px;
   padding: 15px 0 14px 19px;
-  border: none;
   width: 401px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000000;
+  cursor:pointer;
+  border:none;
+}
+
+.input-form-field:focus {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.input-form-field:hover {
+  background: #E6E6E6;
+}
+
+.input-form-field:active {
+  background-color: #FFFFFF;
+  outline: 2px solid #000000;
 }
 
 .amount-form-field {
@@ -1367,12 +1427,32 @@ a.pagination-link:active {
 }
 
 .button-modal {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
   background-color: #83B3D3;
   border-radius: 10px;
   color: #FFFFFF;
   border: none;
   width: 100%;
   padding: 12px 26px;
+  cursor: pointer;
+}
+
+.button-modal:hover {
+  background:#68A2CA;
+}
+
+.button-modal:focus {
+  background: #68A2CA;
+  outline: 3px solid #756257;
+  border-radius: 10px;
+}
+
+.button-modal:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #68A2CA;
+  outline:none;
 }
 
 .auth-form {
@@ -1389,7 +1469,9 @@ a.pagination-link:active {
   background-color: #F2F2F2;
   border: none;
   appearance:none;
+  cursor: pointer;
 }
+
 .button-minus::before{
   position: absolute;
   content: "";
@@ -1421,6 +1503,23 @@ a.pagination-link:active {
   opacity:0.3;
   top: 16px;
   left: 21px;
+}
+
+/* ховер не сделан у кнопки */
+.button-minus:hover,
+.button-plus:hover {
+  background-color: #d6d3d3;
+}
+
+.button-minus:focus,
+.button-plus:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.button-minus:active,
+.button-plus:active {
+  opacity: 0.2;
+  outline:none;
 }
 
 .button-minus {
