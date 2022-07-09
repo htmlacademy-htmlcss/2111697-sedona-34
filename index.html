@@ -187,21 +187,29 @@
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="field-group">Дата заезда:
+              <p class="field-group">
+                <span class="field-group-description">Дата заезда:</span>
                 <label class="visually-hidden" for="check-in-field">27 апреля 2020</label>
                 <input class="input-form-field field" type="text" id="check-in-field" name="date" placeholder="27 апреля 2020">
               </p>
-              <p class="field-group">Дата выезда:
+              <p class="field-group">
+                <span class="field-group-description">Дата выезда:</span>
                 <label class="visually-hidden" for="departure-field">1 сентября 2021</label>
                 <input class="input-form-field field" type="text" id="departure-field" name="date" placeholder="1 сентября 2021">
               </p>
-              <p class="field-group">Взрослые:
+              <p class="field-group">
+                <span class="field-group-description">Взрослые:</span>
                 <label class="visually-hidden" for="amount-field">2</label>
-                <input class="amount-form-field field" type="text" id="amount-field" name="amount-number" placeholder="2">
+                <button class="button-minus" type="button"></button>
+                <input class="amount-form-field field" type="number" id="amount-field" name="amount-number" placeholder="2">
+                <button class="button-plus" type="button"></button>
               </p>
-              <p class="field-group">Дети:
+              <p class="field-group">
+                <span class="field-group-description field-group-description-last">Дети:</span>
                 <label class="visually-hidden" for="amount-field">1</label>
-                <input class="amount-form-field field" type="text" id="amount-kids-field" name="amount-kids-number" placeholder="1">
+                <button class="button-minus" type="button"></button>
+                <input class="amount-form-field field" type="number" id="amount-kids-field" name="amount-kids-number" placeholder="1">
+                <button class="button-plus" type="button"></button>
               </p>
               <button class="button-modal" type="submit">Найти</button>
           </section>
