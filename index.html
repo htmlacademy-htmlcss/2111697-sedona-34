@@ -179,7 +179,7 @@
           </div>
         </footer>
       </div>
-      <div class="modal-container">
+      <div class="modal-container model-container-close">
         <div class="modal modal-search">
           <button class="modal-close-button">
             <span class="visually-hidden">Закрыть</span>
@@ -205,8 +205,20 @@
                 <button class="button-plus" type="button"></button>
               </p>
               <p class="field-group">
+                <span class="form-label form-label-icon ">
                 <span class="field-group-description field-group-description-last ">Дети:</span>
-                <label class="visually-hidden" for="amount-field">1</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами,
+                    возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
+                </span>
+              </span>
+                  <label class="visually-hidden" for="amount-field">1</label>
+
                 <button class="button-minus" type="button"></button>
                 <input class="amount-form-field field" type="number" id="amount-kids-field" name="amount-kids-number" placeholder="1">
                 <button class="button-plus" type="button"></button>
