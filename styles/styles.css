@@ -1344,17 +1344,25 @@ a.pagination-link:active {
   text-transform: uppercase;
   margin: 8px 0 63px;
 }
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  width: 420px;
+  height: 20px;
+  margin-left: 155px;
+  padding: 0;
+}
 
 .field-group {
   position: relative;
   display: flex;
-  margin-bottom: 40px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-transform: capitalize;
   margin: 0;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   width:100%;
 }
 
@@ -1364,7 +1372,6 @@ a.pagination-link:active {
 
 .field-group-description {
   display: block;
-  width: 145px;
   margin-right:auto;
   margin-top: 8px;
 }
@@ -1381,6 +1388,7 @@ a.pagination-link:active {
   border-radius: 4px;
   padding: 15px 0 14px 19px;
   width: 401px;
+  height: 21px;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
@@ -1413,6 +1421,16 @@ a.pagination-link:active {
   padding: 15px 0 14px;
   border: none;
   text-align: center;
+}
+
+.field-group-date:before {
+  position:absolute;
+  content:"";
+  background-image:url("../images/icon/calendar-modal.svg");
+  width: 15px;
+  height: 15px;
+  top: 17px;
+  right: 19px;
 }
 
 /* Кнопка найти */
