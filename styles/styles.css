@@ -1352,7 +1352,6 @@ a.pagination-link:active {
   width: 420px;
   height: 20px;
   margin-left: 155px;
-  margin-bottom: 11px;
   padding: 0;
   text-transform: initial;
 }
@@ -1364,7 +1363,7 @@ a.pagination-link:active {
   font-size: 20px;
   line-height: 26px;
   text-transform: capitalize;
-  margin: 0 auto;
+  margin: 0 auto 11px;
   width:100%;
   flex-wrap: wrap;
 }
@@ -1424,6 +1423,7 @@ a.pagination-link:active {
   padding: 15px 0 14px;
   border: none;
   text-align: center;
+  height: 21px;
 }
 
 .field-group-date:before {
@@ -1486,69 +1486,81 @@ a.pagination-link:active {
   border: none;
   appearance:none;
   cursor: pointer;
-}
-
-.button-minus::before{
-  position: absolute;
-  content: "";
-  width: 13px;
-  height: 1px;
-  background-color:#000000;
-  top: 22px;
-  left: 15px;
-  opacity:0.3;
+  height: 50px;
+  border-radius:4px;
 }
 
 .button-plus::before {
+  content:"";
+  width:44px;
+  height:50px;
+  display: block;
+  opacity: 0.3;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-image: url("../images/icon/plus.svg");
+}
+
+.button-plus:hover::before {
+  opacity:1;
+}
+
+.button-plus:focus:not(:active)::after {
   position: absolute;
-  content: "";
-  width: 13px;
-  height: 1px;
-  background-color:#000000;
-  top: 22px;
-  left: 15px;
-  opacity:0.3;
+  content:"";
+  width: 16px;
+  height: 16px;
+  display: block;
+  top: 14px;
+  right: 11px;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 
-.button-plus::after {
-  position: absolute;
-  content: "";
-  width: 1px;
-  height: 13px;
-  background-color:#000000;
-  top: 16px;
-  left: 21px;
-  opacity:0.3;
-}
-
-.button-minus:hover::before,
-.button-plus:hover::before,
-.button-plus:hover::after {
-  opacity: 1;
-}
-
-.button-minus:focus,
-.button-plus:focus {
-  outline: 3px solid #83B3D3;
-}
-
-.button-minus:active,
-.button-plus:active {
+.button-plus:active::before {
   opacity: 0.2;
-  outline:none;
 }
 
-.button-minus {
-  border-radius: 4px 0 0 4px;
+.button-minus::before {
+  content:"";
+  width:44px;
+  height:50px;
+  display: block;
+  opacity: 0.3;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-image:url("../images/icon/minus.svg");
 }
 
-.button-plus {
-  border-radius: 0 4px 4px 0;
+.button-minus:hover::before {
+  opacity:1;
+}
+
+.button-minus:focus:not(:active)::after {
+  position: absolute;
+  content:"";
+  display: block;
+  width: 16px;
+  height: 16px;
+  top: 14px;
+  right: 11px;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.button-minus:active::before {
+  opacity: 0.2;
 }
 
 .amount-form-field::-webkit-outer-spin-button,
 .amount-form-field::-webkit-inner-spin-button{
   appearance:none;
+}
+
+.amount-group {
+  display: flex;
+  background-color:#F2F2F2;
+  border-radius:4px;
 }
 
 /* Тултип */
@@ -1630,7 +1642,7 @@ a.pagination-link:active {
   height: 9px;
   right: 51px;
   z-index: 1;
-  bottom: 17px;
+  bottom: 22px;
 }
 
 /* Отключение модального окна */

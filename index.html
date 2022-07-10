@@ -188,27 +188,26 @@
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group">
-                <span class="field-group-description field-group-date">Дата заезда:</span>
-                <label class="visually-hidden" for="check-in-field">Укажите дату</label>
-                <input class="input-form-field " type="text" id="check-in-field" name="date" placeholder="Укажите дату">
+                <label class="field-group-description field-group-date" for="check-in-field">Дата заезда:</label>
+                <input class="input-form-field "type="text" id="check-in-field" name="date" placeholder="Укажите дату">
                 <span class="text">Мы не можем отправить вас в прошлое.</span>
               </p>
               <p class="field-group">
-                <span class="field-group-description field-group-date">Дата выезда:</span>
-                <label class="visually-hidden" for="departure-field">Укажите дату</label>
+                <label class="field-group-description field-group-date" for="departure-field">Дата выезда:</label>
                 <input class="input-form-field" type="text" id="departure-field" name="date" placeholder="Укажите дату">
                 <span class="text">На эти даты есть свободные номера. Пока есть.</span>
               </p>
               <p class="field-group">
-                <span class="field-group-description">Взрослые:</span>
-                <label class="visually-hidden" for="amount-field">2</label>
-                <button class="button-minus" type="button"></button>
-                <input class="amount-form-field" type="number" id="amount-field" name="amount-number" placeholder="2">
-                <button class="button-plus" type="button"></button>
+                <label class="field-group-description" for="amount-field">Взрослые:</label>
+                <span class="amount-group">
+                  <button class="button-minus" type="button"></button>
+                  <input class="amount-form-field" type="number" id="amount-field" name="amount-number" value="2" placeholder="0">
+                  <button class="button-plus" type="button"></button>
+                </span>
               </p>
               <p class="field-group">
                 <span class="form-label form-label-icon ">
-                <span class="field-group-description field-group-description-last ">Дети:</span>
+                <label class="field-group-description field-group-description-last" for="amount-kids-field">Дети:</label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                     <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5" fill=""/>
@@ -219,11 +218,11 @@
                   </span>
                 </span>
               </span>
-                  <label class="visually-hidden" for="amount-field">1</label>
-
+              <span class="amount-group">
                 <button class="button-minus" type="button"></button>
-                <input class="amount-form-field field" type="number" id="amount-kids-field" name="amount-kids-number" placeholder="1">
+                <input class="amount-form-field field" type="number" id="amount-kids-field" name="amount-kids-number" value="1" placeholder="0">
                 <button class="button-plus" type="button"></button>
+              </span>
               </p>
               <button class="button-modal" type="submit">Найти</button>
           </section>
