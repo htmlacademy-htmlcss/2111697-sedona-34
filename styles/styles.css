@@ -1587,6 +1587,30 @@ a.pagination-link:active {
   position: relative;
   padding-right: 25px;
 }
+
+.tooltip-text:after {
+  position: absolute;
+  content:"";
+  background-image:url("../images/icon/arrow-tooltip.svg");
+  width: 19px;
+  height: 9px;
+  bottom: 100%;
+  left: 13px;
+  right: 23px;
+  margin: 0 auto;
+}
+
+.field-group-description-last:after {
+  position:absolute;
+  content:"";
+  background-image:url("../images/icon/sign-modal.svg");
+  width: 1px;
+  height: 9px;
+  right: 51px;
+  z-index: 1;
+  bottom: 17px;
+}
+
 /* Отключение модального окна */
 /* .model-container-close {
   display: none;
