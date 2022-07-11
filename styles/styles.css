@@ -44,6 +44,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
   /* Блок навигация */
@@ -56,6 +57,15 @@ body {
 .navigation-logo {
   display: flex;
   margin-left:70px;
+  cursor:pointer;
+}
+
+.navigation-logo:hover {
+  opacity:0.8;
+}
+
+.navigation-logo:active {
+  opacity:0.6;
 }
 
 .navigation-list {
@@ -63,6 +73,8 @@ body {
   flex-wrap: wrap;
   min-width: 390px;
   margin: 0 auto;
+  margin-left: 27px;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -72,8 +84,11 @@ body {
   align-items: center;
   flex-wrap: wrap;
   margin:0 auto;
+  margin-right: 70px;
   list-style-type: none;
 }
+
+/* Иконки навигации */
 
 .navigation-user-item-search {
   background-image:url("/images/icon/search.svg");
@@ -91,11 +106,24 @@ body {
 }
 
 .navigation-user-item-favorite {
+  position:relative;
   background-image:url("/images/icon/favorite.svg");
   background-repeat:no-repeat;
   background-position:center center;
   cursor: pointer;
 }
+
+.navigation-user-item-favorite::before {
+  position: absolute;
+  content:"";
+  width:20px;
+  height: 20px;
+  background-color:#7DB54F;
+  top: 6px;
+  left: 26px;
+  border-radius: 10px;
+}
+
 
 .navigation-user-item-favorite:hover {
   color: #756157;
@@ -105,6 +133,11 @@ body {
 .navigation-user-item-favorite:active {
   color: rgba(117, 97, 87, 0.3);
   opacity:0.6;
+}
+
+.navigation-user-item-favorite:focus {
+  color: rgba(173, 72, 21, 0.3);
+  opacity:1;
 }
 
 .navigation-link {
@@ -133,7 +166,12 @@ body {
   background-color:#756257;
   content: "";
 }
+.navigation-button{
+  margin-left: 20px;
+  min-width: 160px;
+  min-height: 37px;
 
+}
 .navigation-button:hover {
   background-color: #615048;
 }
@@ -154,6 +192,8 @@ body {
   background: #756157;
   color: #FFFFFF;
   border: none;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: 20px;
   border-radius: 4px;
@@ -161,6 +201,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
 }
 
 /* Блок Добро пожаловать */
@@ -171,7 +212,7 @@ body {
 }
 
 .welcome {
-  min-height:428px;
+  min-height: 352px;
   padding:51px 70px 82px;
   background-image:url(../images/background-sedona.svg),url(../images/sedona-background.jpg);
   background-color:#82B3D3;
@@ -352,13 +393,15 @@ body {
 }
 
 .search-hotel-button {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
-  width: 592px;
+  min-width: 544px;
+  min-height: 36px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   cursor: pointer;
+  padding: 12px 15px;
 }
 
 .search-hotel-button:hover {
@@ -406,19 +449,15 @@ body {
   line-height: 21px;
   border-radius:10px 0 0 10px;
   background-color: #F2F2F2;
-  width: 600px;
+  width: 560px;
   border: transparent;
-  padding: 20px 22px;
+  padding: 20px 20px;
   outline: none;
 }
 
 .subscribe-field:hover,
 .subscribe-field:focus {
   opacity: 0.8;
-}
-
-.subscribe-field:focus {
-  outline: 1px solid #F2F2F2;
 }
 
 .subscribe-field:disabled,
@@ -430,7 +469,7 @@ body {
 
 .button-green {
   background-color: #7DB54F;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   cursor: pointer;
 }
@@ -452,11 +491,12 @@ body {
 
 .button-blue {
   background-color: #82B3D3;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   cursor: pointer;
 }
 
+.button-blue:focus,
 .button-blue:hover {
   background-color: #68A2CA;
 }
@@ -467,6 +507,8 @@ body {
 }
 
 .subscribe-button {
+  min-width: 200px;
+  min-height: 60px;
   font-size: 20px;
   line-height: 36px;
   border-radius: 0 10px 10px 0;
@@ -500,11 +542,6 @@ body {
   align-items: center;
   padding: 13px 15px;
   }
-
-.footer-social-copyright {
-  margin-top:5px;
-  margin-bottom:5px;
-}
 
 .icon-vk {
   fill:#83B3D3;
@@ -550,8 +587,8 @@ body {
 }
 
 .footer-phone {
-  width:331px;
-  height:40px;
+  min-width:331px;
+  min-height:40px;
   margin-top:5px;
   margin-bottom:5px;
 }
@@ -568,7 +605,6 @@ body {
   min-width: 115px;
   min-height: 33px;
   margin-top: 9px;
-  margin-bottom: 8px;
 }
 
 .logo-html-academy:hover {
@@ -657,7 +693,7 @@ a.breadcrumbs-link:active {
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -967,20 +1003,22 @@ a.breadcrumbs-link:active {
 }
 
 .select-control {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   min-width: 290px;
   min-height:49px;
-  padding: 14px 20px;
+  padding: 12px 20px;
   border: 2px solid #E5E5E5;
+  background-color: #FFFFFF;
   border-radius: 4px;
   margin: 0 auto;
   cursor:pointer;
 }
 
+.select-control:focus,
 .select-control:hover {
   border: 2px solid #68A2CA;
 }
@@ -1036,6 +1074,8 @@ a.breadcrumbs-link:active {
 }
 
 .hotels-found {
+  min-width: 338px;
+  height: 36px;
   margin:8px 0 5px;
   font-size: 30px;
   line-height: 36px;
@@ -1208,7 +1248,7 @@ a.breadcrumbs-link:active {
 }
 
 .holels-per-page-label {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1223,6 +1263,7 @@ a.breadcrumbs-link:active {
   border-radius: 4px;
   margin-left:51px;
   cursor: pointer;
+  background-color: #FFFFFF;
 }
 
 .select-control:focus {
@@ -1336,7 +1377,7 @@ a.pagination-link:active {
 }
 
 .modal-title {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -1354,6 +1395,11 @@ a.pagination-link:active {
   margin-left: 155px;
   padding: 0;
   text-transform: initial;
+  color: #333333;
+}
+
+.text-error {
+  color: #FF5757;
 }
 
 .field-group {
@@ -1424,6 +1470,7 @@ a.pagination-link:active {
   border: none;
   text-align: center;
   height: 21px;
+  cursor: pointer;
 }
 
 .field-group-date:before {
@@ -1573,6 +1620,7 @@ a.pagination-link:active {
   margin-top: -34px;
   display: block;
   fill: #83B3D3;
+  cursor: pointer;
 }
 
 .tooltip-icon {
@@ -1646,6 +1694,7 @@ a.pagination-link:active {
 }
 
 /* Отключение модального окна */
-/* .model-container-close {
+
+.model-container-close {
   display: none;
-} */
+}
