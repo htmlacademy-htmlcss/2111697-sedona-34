@@ -1774,6 +1774,6 @@ a.pagination-link:active {
 
 /* Отключение модального окна */
 
-/* .model-container-close {
+.model-container-close {
   display: none;
-} */
+}
