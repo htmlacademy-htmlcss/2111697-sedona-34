@@ -94,27 +94,21 @@ body {
   position:relative;
 }
 
-.navigation-favorite::before {
+.favorite-counter {
   position: absolute;
   content: "";
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   background-color: #7DB54F;
   top: -5px;
   left: 13px;
   border-radius: 10px;
-}
-
-.favorite-counter {
-  position: absolute;
-  content: "";
-  text-decoration: none;
-  color: #FFFFFF;
-  font-weight: 400;
+  color:#FFFFFF;
   font-size: 10px;
   line-height: 13px;
-  right: -9px;
-  top: -2px;
+  padding: 3px 3px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .navigation-search:hover {
@@ -167,12 +161,13 @@ body {
   background-color:#756257;
   content: "";
 }
+
 .navigation-button {
-  margin-left: 20px;
+  margin-left: 18px;
   min-width: 160px;
   min-height: 37px;
-
 }
+
 .navigation-button:hover {
   background-color: #615048;
 }
@@ -180,6 +175,14 @@ body {
 .navigation-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
+}
+
+.navigation-button:disabled:hover,
+.navigation-button:disabled:active,
+.navigation-button:disabled {
+  background: #E5E5E5;
+  border-radius: 4px;
+  color:#FFFFFF;
 }
 
 .navigation-user-item {
@@ -407,6 +410,14 @@ body {
   background-color: #756157;
 }
 
+.search-hotel-button:disabled:hover,
+.search-hotel-button:disabled:active,
+.search-hotel-button:disabled {
+  color: #FFFFFF;
+  background: #E5E5E5;
+  border-radius: 4px;
+}
+
 .subscribe {
   display: block;
   min-width: 1060px;
@@ -454,11 +465,11 @@ body {
   opacity: 0.8;
 }
 
-.subscribe-field:disabled,
-.subscribe-field:disabled:hover {
-  color:#000000;
-  background-color:#F2F2F2;
-  border-color:transparent;
+.subscribe-field:disabled:hover,
+.subscribe-field:disabled {
+  color: #161414;
+  background-color: #F2F2F2;
+  opacity: 0.5;
 }
 
 .button-green {
@@ -475,6 +486,14 @@ body {
 .button-green:active {
   color: rgba(255, 255, 255, 0.3);
   background-color:#7DB54F;
+}
+
+.button-green:disabled:hover,
+.button-green:disabled:active,
+.button-green:disabled {
+  background: #E5E5E5;
+  border-radius: 4px;
+  color: #FFFFFF;
 }
 
 .button-blue-apply {
@@ -498,6 +517,14 @@ body {
 .button-blue:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #82B3D3;
+}
+
+.button-blue:disabled:hover,
+.button-blue:disabled:active,
+.button-blue:disabled {
+  background: #E5E5E5;
+  border-radius: 4px;
+  color: #FFFFFF;
 }
 
 .subscribe-button {
@@ -841,6 +868,8 @@ a.breadcrumbs-link:active {
   appearance: none;
 }
 
+/* Состояния инпутов */
+
 .price-input:hover {
   border-color:#abb0b3;
 }
@@ -858,9 +887,20 @@ a.breadcrumbs-link:active {
   box-shadow: none;
 }
 
+.price-input:disabled:hover,
+.price-input:disabled:active,
+.price-input:disabled {
+  color: #161414;
+  background-color: #F2F2F2;
+  opacity: 0.5;
+  border: none;
+}
+
 .price-input::placeholder {
   color: #FFFFFF;
 }
+
+/* Инпуты фильтра гостиниц */
 
 .price-input {
   width:144px;
@@ -985,6 +1025,14 @@ a.breadcrumbs-link:active {
 .button-reset:active {
   opacity: 0.3;
   border-color:transparent;
+}
+
+.button-reset:disabled:hover,
+.button-reset:disabled:active,
+.button-reset:disabled {
+  border-radius: 4px;
+  color: #E5E5E5;
+  opacity: 0.3;
 }
 
 .hotels-sorting {
@@ -1456,6 +1504,13 @@ a.pagination-link:active {
 .input-form-field:hover {
   background: #E6E6E6;
 }
+.input-form-field:disabled:focus,
+.input-form-field:disabled:hover,
+.input-form-field:disabled {
+  color: #161414;
+  background-color: #F2F2F2;
+  opacity: 0.5;
+}
 
 .input-form-field:not(:placeholder-shown) {
   background-color: #FFFFFF;
@@ -1486,6 +1541,7 @@ a.pagination-link:active {
 }
 
 /* Кнопка найти */
+
 .button-modal {
   font-weight: 700;
   font-size: 20px;
@@ -1515,6 +1571,15 @@ a.pagination-link:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #68A2CA;
   outline:none;
+}
+
+
+.button-modal:disabled:hover,
+.button-modal:disabled:active,
+.button-modal:disabled {
+  background-color: #E5E5E5;
+  border-radius: 4px;
+  color:#FFFFFF;
 }
 
 .auth-form {
@@ -1599,6 +1664,18 @@ a.pagination-link:active {
 
 .button-minus:active::before {
   opacity: 0.2;
+}
+
+.button-minus:disabled:active::before,
+.button-minus:disabled:hover::before,
+.button-minus:disabled {
+  opacity:0.3;
+}
+
+.button-plus:disabled:active::before,
+.button-plus:disabled:hover::before,
+.button-plus:disabled {
+  opacity:0.3;
 }
 
 .amount-form-field::-webkit-outer-spin-button,
@@ -1697,6 +1774,6 @@ a.pagination-link:active {
 
 /* Отключение модального окна */
 
-.model-container-close {
+/* .model-container-close {
   display: none;
-}
+} */

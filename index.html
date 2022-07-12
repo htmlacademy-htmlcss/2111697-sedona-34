@@ -39,7 +39,7 @@
                 <span class="favorite-counter">12</span>
               </a>
             </li>
-              <button class="button navigation-button" href="#">Хочу сюда!</a>
+              <button class="button navigation-button" href="#" disabled>Хочу сюда!</a>
           </ul>
         </nav>
       </header>
@@ -132,9 +132,9 @@
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="subscribe-label">
               <span class="visually-hidden">Введите ваш e-mail</span>
-              <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email" required>
+              <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email" disabled required>
             </label>
-            <button class="button button-blue subscribe-button" type="submit">Подписаться</button>
+            <button class="button button-blue subscribe-button" type="submit" disabled>Подписаться</button>
           </form>
         </article>
         <footer class="footer">
@@ -192,42 +192,43 @@
             <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group">
                 <label class="field-group-description field-group-date" for="check-in-field">Дата заезда:</label>
-                <input class="input-form-field "type="text" id="check-in-field" name="date" placeholder="Укажите дату">
+                <input class="input-form-field"type="text" id="check-in-field" name="date" placeholder="Укажите дату" disabled>
                 <span class="text text-error">Мы не можем отправить вас в прошлое.</span>
               </p>
               <p class="field-group">
                 <label class="field-group-description field-group-date" for="departure-field">Дата выезда:</label>
-                <input class="input-form-field" type="text" id="departure-field" name="date" placeholder="Укажите дату">
+                <input class="input-form-field" type="text" id="departure-field" name="date" placeholder="Укажите дату" disabled>
                 <span class="text">На эти даты есть свободные номера. Пока есть.</span>
               </p>
               <p class="field-group">
                 <label class="field-group-description" for="amount-field">Взрослые:</label>
                 <span class="amount-group">
-                  <button class="button-minus" type="button"></button>
+                  <button class="button-minus" type="button" disabled></button>
                   <input class="amount-form-field" type="number" id="amount-field" name="amount-number" value="2" placeholder="0">
-                  <button class="button-plus" type="button"></button>
+                  <button class="button-plus" type="button" disabled></button>
                 </span>
               </p>
               <p class="field-group">
                 <span class="form-label form-label-icon ">
-                <label class="field-group-description field-group-description-last" for="amount-kids-field">Дети:</label>
-                <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                    <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5" fill=""/>
-                    </svg>
-                  </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами,
+                  <label class="field-group-description field-group-description-last" for="amount-kids-field">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12.5" cy="12.5" r="12.5" fill=""/>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами,
                     возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
                   </span>
                 </span>
-              </span>
-              <span class="amount-group">
-                <button class="button-minus" type="button"></button>
+                <span class="amount-group">
+                <button class="button-minus" type="button"disabled></button>
                 <input class="amount-form-field field" type="number" id="amount-kids-field" name="amount-kids-number" value="1" placeholder="0">
-                <button class="button-plus" type="button"></button>
-              </span>
+                <button class="button-plus" type="button"disabled></button>
+                </span>
               </p>
-              <button class="button-modal" type="submit">Найти</button>
+            <button class="button-modal" type="submit" disabled>Найти</button>
           </section>
         </div>
       </div>
