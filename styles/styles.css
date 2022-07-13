@@ -114,27 +114,14 @@ body {
   text-align: center;
 }
 
-.navigation-search:hover {
+.navigation-search:hover,
+.navigation-favorite:hover {
   opacity: 0.7;
 }
 
-.navigation-search:active {
-  opacity:0.5;
-}
-
-.navigation-favorite:hover {
-  color: #756157;
-  opacity: 0.8;
-}
-
+.navigation-search:active,
 .navigation-favorite:active {
-  color: rgba(117, 97, 87, 0.3);
-  opacity:0.6;
-}
-
-.navigation-favorite:focus {
-  color: rgba(173, 72, 21, 0.3);
-  opacity:1;
+  opacity:0.5;
 }
 
 .navigation-link {
@@ -1448,6 +1435,7 @@ a.pagination-link:active {
   padding: 0;
   text-transform: initial;
   color: #333333;
+  margin-top:7px;
 }
 
 .text-error {
@@ -1473,12 +1461,12 @@ a.pagination-link:active {
 .field-group-description {
   display: block;
   margin-right:auto;
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 .field-group-description-last {
-  margin-left: 41px;
-  width: 88px;
+  margin-left: 57px;
+  width: 72px;
 }
 
 /* Инпуты */
@@ -1489,7 +1477,7 @@ a.pagination-link:active {
   padding: 15px 0 14px 19px;
   width: 401px;
   height: 21px;
-  font-weight: 700;
+  font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 40px;
   color: #000000;
@@ -1525,7 +1513,7 @@ a.pagination-link:active {
 .amount-form-field {
   background: #F2F2F2;
   width: 45px;
-  padding: 15px 0 14px;
+  padding: 18px 0 14px;
   border: none;
   text-align: center;
   height: 21px;
@@ -1559,7 +1547,7 @@ a.pagination-link:active {
   width: 100%;
   padding: 12px 26px;
   cursor: pointer;
-  margin-top: 40px;
+  margin-top: 28px;
 }
 
 .button-modal:hover {
@@ -1607,12 +1595,13 @@ a.pagination-link:active {
   cursor: pointer;
   height: 50px;
   border-radius:4px;
+  outline:none;
 }
 
 .button-plus::before {
   content:"";
-  width:44px;
-  height:50px;
+  width:39px;
+  height:54px;
   display: block;
   opacity: 0.3;
   background-repeat:no-repeat;
@@ -1642,8 +1631,8 @@ a.pagination-link:active {
 
 .button-minus::before {
   content:"";
-  width:44px;
-  height:50px;
+  width: 51px;
+  height: 55px;
   display: block;
   opacity: 0.3;
   background-repeat:no-repeat;
@@ -1705,6 +1694,10 @@ a.pagination-link:active {
   height: 25px;
   border-radius: 50%;
   background-color: #83B3D3;
+  background-image:url("../images/icon/info.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  outline:none;
 }
 
 .tooltip-icon {
@@ -1713,14 +1706,15 @@ a.pagination-link:active {
   display: block;
 }
 
-.tooltip-toggle:hover {
-  fill: #68A2CA;
+.tooltip-toggle:hover,
+.tooltip-toggle:focus {
+  background-color: #68A2CA;
 }
 
 .tooltip-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 21px;
   text-transform: none;
   background: #333333;
   box-shadow: rgba(0, 0, 0, 0.3)
@@ -1731,9 +1725,8 @@ a.pagination-link:active {
   width: 216px;
   height: 110px;
   position:absolute;
-  left: 95%;
-  margin-top: 17px;
-  transform: translateX(-50%);
+  left: -115px;
+  margin-top: 9px;
   z-index:1;
   display: none;
 }
@@ -1745,8 +1738,8 @@ a.pagination-link:active {
 
 .tooltip {
   position: absolute;
-  left: -4px;
-  top: 45px;
+  right: 18px;
+  top: 17px;
 }
 
 .form-label-icon {
@@ -1761,25 +1754,13 @@ a.pagination-link:active {
   width: 19px;
   height: 9px;
   bottom: 100%;
-  left: 13px;
+  left: 22px;
   right: 23px;
   margin: 0 auto;
 }
 
-
-.field-group-description-last:after {
-  position:absolute;
-  content:"";
-  background-image:url("../images/icon/sign-modal.svg");
-  width: 1px;
-  height: 9px;
-  right: 51px;
-  z-index: 1;
-  bottom: 22px;
-}
-
 /* Отключение модального окна */
 
-/* .model-container-close {
+.model-container-close {
   display: none;
-} */
+}
