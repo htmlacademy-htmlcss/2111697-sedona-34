@@ -256,7 +256,7 @@ body {
 }
 
 .advantages-sublist-container {
-  min-width: 260px;
+  width: 260px;
   padding: 80px 70px;
 }
 
@@ -705,7 +705,7 @@ a.breadcrumbs-link:active {
   background-size: cover;
   background-color: #6767d5;
   background-repeat: no-repeat;
-  height: 298px;
+  min-height: 298px;
   display: flex;
   flex-wrap: wrap;
 }
